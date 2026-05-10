@@ -1,0 +1,29 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "sarvam": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Sarvam AI",
+      "options": {
+        "baseURL": "https://sarvam-proxy.xxx.workers.dev",
+        "headers": {}
+      },
+      "models": {
+        "sarvam-105b": {
+          "name": "Sarvam 105B",
+          "limit": {
+            "context": 128000,
+            "output": 2048
+          }
+        },
+        "sarvam-30b": {
+          "name": "Sarvam 30B",
+          "limit": {
+            "context": 64000,
+            "output": 2048
+          }
+        }
+      }
+    }
+  }
+}
